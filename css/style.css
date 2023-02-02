@@ -1,0 +1,58 @@
+.logo{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.container{
+    border: 2px solid black;
+    max-width: 900px;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
+
+.message{
+    padding: 2px 6px;
+    border: 2px solid black;
+    margin: 17px 9px;
+    border-radius: 8px;
+    background-color: rgb(196, 187, 200);
+}
+.left{
+    /* border: 2px solid black; */
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+
+.send{
+    /* border: 2px solid rebeccapurple; */
+    margin: 5px;
+}
+
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+#msgInpt{
+    width: 92%;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#btn{
+    cursor: pointer;
+    border: 1px solid black;
+    height: 25px;
+    border-radius: 6px;
+}

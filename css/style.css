@@ -14,8 +14,8 @@ body {
 }
 
 .logo {
-    height: 70px;
-    width: 70px;
+    height: 5%;
+    width: 5%;
     display: block;
     margin: auto;
 }
@@ -34,7 +34,7 @@ h1 {
 .container {
     border: 2px solid black;
     border-radius: 22px;
-    max-width: 800px;
+    max-width: 65%;
     height: 60vh;
     margin: auto;
     margin-top: 12px;
@@ -73,8 +73,8 @@ h1 {
     justify-content: center;
     align-items: center;
     /* width: 40px; */
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 33%;
+    margin-right: 33%;
 }
 
 .send {

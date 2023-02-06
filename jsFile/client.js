@@ -11,15 +11,14 @@ var audio = new Audio("ting.mp3");
 const name = prompt("Enter your name to join");
 socket.emit("new-user-joined", name);
 
-//  notification -- when someone joins
 
 initbutton.addEventListener("click", (e) => {
     e.preventDefault(); //avoids reloading
     initbutton.style.display = "none";
     form.style.display = "block";
-    messageInput.style.display = "block";
-    subbutton.style.display = "block";
-    console.log("hello");
+    messageInput.style.display = "inline";
+    subbutton.style.display = "inline";
+    // console.log("hello");
 });
 
 form.addEventListener("submit", (e) => {

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "Nikita (9.25 wali)",
+  "author": "Nikita",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

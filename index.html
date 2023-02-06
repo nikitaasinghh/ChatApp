@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChitChat - Real time chat application</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=Sacramento&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <!-- defer: scripts will be downloaded in the background and once the DOM is loaded, it will run -->
     <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
     <script defer src="jsFile/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img class="logo" src="logo.png" alt="This is a logo">
-        <h1>Get The Chat Out</h1>
+      <img class="logo" src="logo.png" alt="This is a logo" />
+      <h1>Get The Chat Out</h1>
     </nav>
     <div class="maincontainer">
-        <div class="container">
-        </div>
+      <div class="container"></div>
 
-        <div class="send">
-            <form action="#" id="send-container">
-                <input type="text" name="msgInp" id="msgInpt" placeholder="We promise to keep it a secret..!!">
-                <button type="submit" id="btn">Send</button>
-            </form>
-        </div>
+      <div class="send">
+        
+        <button
+          type="click"
+          class="btn send-container"
+          id="test"
+        >
+          Press Here to get started
+        </button>
 
-        <h3>Time To Get Connected...!!</h3>
+      </div>
 
+      <h3>Time To Get Connected...!!</h3>
     </div>
-
-</body>
-
+  </body>
 </html>

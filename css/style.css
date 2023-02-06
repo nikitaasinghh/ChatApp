@@ -82,7 +82,7 @@ h1 {
     margin: 5px;
 }
 
-#send-container {
+.send-container {
     display: block;
     margin: auto;
     text-align: center;
@@ -101,7 +101,7 @@ h1 {
     border-radius: 7px;
 }
 
-#btn {
+.btn {
     cursor: pointer;
     border: 2px solid black;
     height: 25px;

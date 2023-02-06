@@ -1,6 +1,11 @@
 const socket = io("http://localhost:8000");
-const button = document.getElementById("test");
+const initbutton = document.getElementById("initBtn");
+
+const subbutton = document.getElementById("btn");
 const messageContainer = document.querySelector(".container");
+const form = document.getElementById("send-container");
+const messageInput = document.getElementById("msgInpt");
+
 var audio = new Audio("ting.mp3");
 
 const name = prompt("Enter your name to join");
@@ -8,48 +13,22 @@ socket.emit("new-user-joined", name);
 
 //  notification -- when someone joins
 
-button.addEventListener("click", (e) => {
+initbutton.addEventListener("click", (e) => {
     e.preventDefault(); //avoids reloading
+    initbutton.style.display = "none";
+    form.style.display = "block";
+    messageInput.style.display = "block";
+    subbutton.style.display = "block";
     console.log("hello");
-    setTimeout(putForm, 1000);
-    addEL();
 });
 
-async function putForm() {
-    var str =
-        '<form action="#" class="send-container">' +
-        '<input type="text" name="msgInp" id="msgInpt" placeholder="We promise to keep it a secret..!!">' +
-        '<button type="submit" class="btn">Send</button>' +
-        "</form>";
-
-
-    var Obj = document.getElementById("test"); 
-
-
-    if (Obj.outerHTML) {
-        Obj.outerHTML = str; 
-    } 
-
-}
-
-function sleepFor(sleepDuration){
-    var now = new Date().getTime();
-    while(new Date().getTime() < now + sleepDuration){ /* Do nothing */ }
-}
-
-function addEL() {
-
-    const form = document.getElementById("send-container");
-    const messageInput = document.getElementById("msgInpt");
-    form.addEventListener("submit", (e) => {
-        e.preventDefault(); //avoids reloading
-        const message = messageInput.value;
-        append(`You: ${message}`, "right");
-        socket.emit("send", message);
-        messageInput.value = "";
-    });
-
-}
+form.addEventListener("submit", (e) => {
+    e.preventDefault(); //avoids reloading
+    const message = messageInput.value;
+    append(`You: ${message}`, "right");
+    socket.emit("send", message);
+    messageInput.value = "";
+});
 
 const append = (message, position) => {
     const msgElm = document.createElement("div");

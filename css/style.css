@@ -82,8 +82,8 @@ h1 {
     margin: 5px;
 }
 
-.send-container {
-    display: block;
+#send-container {
+    display: none;
     margin: auto;
     text-align: center;
     width: 50%;
@@ -95,13 +95,15 @@ h1 {
 }
 
 #msgInpt {
+    display: none;
     width: 84%;
     height: 30px;
     border: 2px solid black;
     border-radius: 7px;
 }
 
-.btn {
+#btn {
+    display: none;
     cursor: pointer;
     border: 2px solid black;
     height: 25px;
@@ -109,6 +111,19 @@ h1 {
     font-family: 'Itim', cursive;
     font-size: 15px;
     /* width: 8%; */
+}
+
+#initBtn{
+
+    display: block;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    height: 25px;
+    width: 50%;
+    border-radius: 6px;
+
 }
 
 h3 {
